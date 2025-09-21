@@ -46,4 +46,23 @@ echo "Hasil AND (a && b): " . var_export($hasilAnd, true) . "<br>";
 echo "Hasil OR (a || b): " . var_export($hasilOr, true) . "<br>";
 echo "Hasil NOT (!a): " . var_export($hasilNotA, true) . "<br>";
 echo "Hasil NOT (!b): " . var_export($hasilNotB, true) . "<br>";
+
+echo "<br>";
+
+$a += $b;
+$a -= $b;
+$a *= $b;
+$a /= $b;
+$a %= $b;
+
+$aTemp = $a; $aTemp += $b;
+echo "Hasil \$a += \$b: " . var_export($aTemp, true) . "<br>";
+$aTemp = $a; $aTemp -= $b;
+echo "Hasil \$a -= \$b: " . var_export($aTemp, true) . "<br>";
+$aTemp = $a; $aTemp *= $b;
+echo "Hasil \$a *= \$b: " . var_export($aTemp, true) . "<br>";
+$aTemp = $a; $aTemp /= $b;
+echo "Hasil \$a /= \$b: " . var_export($aTemp, true) . "<br>";
+$aTemp = $a; $aTemp %= $b;
+echo "Hasil \$a %= \$b: " . var_export($aTemp, true) . "<br>";
 ?>
