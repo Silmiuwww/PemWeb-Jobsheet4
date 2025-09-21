@@ -65,4 +65,13 @@ $aTemp = $a; $aTemp /= $b;
 echo "Hasil \$a /= \$b: " . var_export($aTemp, true) . "<br>";
 $aTemp = $a; $aTemp %= $b;
 echo "Hasil \$a %= \$b: " . var_export($aTemp, true) . "<br>";
+
+echo "<br>";
+
+$hasilIdentik = $a === $b;
+$hasilTidakIdentik = $a !== $b;
+
+echo "Apakah a === b (identik)? " . var_export($hasilIdentik, true) . "<br>";
+echo "Apakah a !== b (tidak identik)? " . var_export($hasilTidakIdentik, true) . "<br>";
+
 ?>
