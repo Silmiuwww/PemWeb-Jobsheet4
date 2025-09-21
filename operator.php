@@ -9,69 +9,139 @@ $hasilBagi = $a / $b;
 $sisabagi = $a % $b;
 $pangkat = $a ** $b;
 
-echo "Nilai a: {$a} <br>";
-echo "Nilai b: {$b} <br><br>";
+echo "Nilai a: $a <br>";
+echo "Nilai b: $b <br><br>";
 
-echo "Hasil Penjumlahan: {$hasiltambah} <br>";
-echo "Hasil Pengurangan: {$hasilKurang} <br>";
-echo "Hasil Perkalian: {$hasilKali} <br>";
-echo "Hasil Pembagian: {$hasilBagi} <br>";
-echo "Sisa Pembagian: {$sisabagi} <br>";
-echo "Hasil Pemangkatan: {$pangkat} <br>";
+echo "Hasil Penjumlahan: $hasiltambah <br>";
+echo "Hasil Pengurangan: $hasilKurang <br>";
+echo "Hasil Perkalian: $hasilKali <br>";
+echo "Hasil Pembagian: $hasilBagi <br>";
+echo "Sisa Pembagian: $sisabagi <br>";
+echo "Hasil Pemangkatan: $pangkat <br><br>";
 
+$hasilSama = ($a == $b);
+$hasilTidakSama = ($a != $b);
+$hasilLebihKecil = ($a < $b);
+$hasilLebihBesar = ($a > $b);
+$hasilLebihKecilSama = ($a <= $b);
+$hasilLebihBesarSama = ($a >= $b);
+
+echo "Apakah a == b? ";
+if ($hasilSama) {
+    echo "true";
+} else {
+    echo "false";
+}
 echo "<br>";
 
-$hasilSama = $a == $b;
-$hasilTidakSama = $a != $b;
-$hasilLebihKecil = $a < $b;
-$hasilLebihBesar = $a > $b;
-$hasilLebihKecilSama = $a <= $b;
-$hasilLebihBesarSama = $a >= $b;
-
-echo "Apakah a == b? " . var_export($hasilSama, true) . "<br>";
-echo "Apakah a != b? " . var_export($hasilTidakSama, true) . "<br>";
-echo "Apakah a < b? " . var_export($hasilLebihKecil, true) . "<br>";
-echo "Apakah a > b? " . var_export($hasilLebihBesar, true) . "<br>";
-echo "Apakah a <= b? " . var_export($hasilLebihKecilSama, true) . "<br>";
-echo "Apakah a >= b? " . var_export($hasilLebihBesarSama, true) . "<br>";
-
+echo "Apakah a != b? ";
+if ($hasilTidakSama) {
+    echo "true";
+} else {
+    echo "false";
+}
 echo "<br>";
 
-$hasilAnd = $a && $b;
-$hasilOr = $a || $b;
+echo "Apakah a < b? ";
+if ($hasilLebihKecil) {
+    echo "true";
+} else {
+    echo "false";
+}
+echo "<br>";
+
+echo "Apakah a > b? ";
+if ($hasilLebihBesar) {
+    echo "true";
+} else {
+    echo "false";
+}
+echo "<br>";
+
+echo "Apakah a <= b? ";
+if ($hasilLebihKecilSama) {
+    echo "true";
+} else {
+    echo "false";
+}
+echo "<br>";
+
+echo "Apakah a >= b? ";
+if ($hasilLebihBesarSama) {
+    echo "true";
+} else {
+    echo "false";
+}
+echo "<br><br>";
+
+$hasilAnd = ($a && $b);
+$hasilOr = ($a || $b);
 $hasilNotA = !$a;
 $hasilNotB = !$b;
 
-echo "Hasil AND (a && b): " . var_export($hasilAnd, true) . "<br>";
-echo "Hasil OR (a || b): " . var_export($hasilOr, true) . "<br>";
-echo "Hasil NOT (!a): " . var_export($hasilNotA, true) . "<br>";
-echo "Hasil NOT (!b): " . var_export($hasilNotB, true) . "<br>";
-
+echo "Hasil AND (a && b): ";
+if ($hasilAnd) {
+    echo "true";
+} else {
+    echo "false";
+}
 echo "<br>";
+
+echo "Hasil OR (a || b): ";
+if ($hasilOr) {
+    echo "true";
+} else {
+    echo "false";
+}
+echo "<br>";
+
+echo "Hasil NOT (!a): ";
+if ($hasilNotA) {
+    echo "true";
+} else {
+    echo "false";
+}
+echo "<br>";
+
+echo "Hasil NOT (!b): ";
+if ($hasilNotB) {
+    echo "true";
+} else {
+    echo "false";
+}
+echo "<br><br>";
 
 $a += $b;
+echo "Hasil a += b: $a <br>";
+
 $a -= $b;
+echo "Hasil a -= b: $a <br>";
+
 $a *= $b;
+echo "Hasil a *= b: $a <br>";
+
 $a /= $b;
+echo "Hasil a /= b: $a <br>";
+
 $a %= $b;
+echo "Hasil a %= b: $a <br><br>";
 
-$aTemp = $a; $aTemp += $b;
-echo "Hasil \$a += \$b: " . var_export($aTemp, true) . "<br>";
-$aTemp = $a; $aTemp -= $b;
-echo "Hasil \$a -= \$b: " . var_export($aTemp, true) . "<br>";
-$aTemp = $a; $aTemp *= $b;
-echo "Hasil \$a *= \$b: " . var_export($aTemp, true) . "<br>";
-$aTemp = $a; $aTemp /= $b;
-echo "Hasil \$a /= \$b: " . var_export($aTemp, true) . "<br>";
-$aTemp = $a; $aTemp %= $b;
-echo "Hasil \$a %= \$b: " . var_export($aTemp, true) . "<br>";
+$hasilIdentik = ($a === $b);
+$hasilTidakIdentik = ($a !== $b);
 
+echo "Apakah a === b (identik)? ";
+if ($hasilIdentik) {
+    echo "true";
+} else {
+    echo "false";
+}
 echo "<br>";
 
-$hasilIdentik = $a === $b;
-$hasilTidakIdentik = $a !== $b;
-
-echo "Apakah a === b (identik)? " . var_export($hasilIdentik, true) . "<br>";
-echo "Apakah a !== b (tidak identik)? " . var_export($hasilTidakIdentik, true) . "<br>";
-
+echo "Apakah a !== b (tidak identik)? ";
+if ($hasilTidakIdentik) {
+    echo "true";
+} else {
+    echo "false";
+}
+echo "<br>";
 ?>
