@@ -35,4 +35,15 @@ echo "Apakah a > b? " . var_export($hasilLebihBesar, true) . "<br>";
 echo "Apakah a <= b? " . var_export($hasilLebihKecilSama, true) . "<br>";
 echo "Apakah a >= b? " . var_export($hasilLebihBesarSama, true) . "<br>";
 
+echo "<br>";
+
+$hasilAnd = $a && $b;
+$hasilOr = $a || $b;
+$hasilNotA = !$a;
+$hasilNotB = !$b;
+
+echo "Hasil AND (a && b): " . var_export($hasilAnd, true) . "<br>";
+echo "Hasil OR (a || b): " . var_export($hasilOr, true) . "<br>";
+echo "Hasil NOT (!a): " . var_export($hasilNotA, true) . "<br>";
+echo "Hasil NOT (!b): " . var_export($hasilNotB, true) . "<br>";
 ?>
