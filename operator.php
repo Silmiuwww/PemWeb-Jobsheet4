@@ -26,122 +26,40 @@ $hasilLebihBesar = ($a > $b);
 $hasilLebihKecilSama = ($a <= $b);
 $hasilLebihBesarSama = ($a >= $b);
 
-echo "Apakah a == b? ";
-if ($hasilSama) {
-    echo "true";
-} else {
-    echo "false";
-}
-echo "<br>";
+echo "Apakah a == b? $hasilSama <br>";
+echo "Apakah a != b? $hasilTidakSama <br>";
+echo "Apakah a < b? $hasilLebihKecil <br>";
+echo "Apakah a > b? $hasilLebihBesar <br>";
+echo "Apakah a <= b? $hasilLebihKecilSama <br>";
+echo "Apakah a >= b? $hasilLebihBesarSama <br><br>";
 
-echo "Apakah a != b? ";
-if ($hasilTidakSama) {
-    echo "true";
-} else {
-    echo "false";
-}
-echo "<br>";
-
-echo "Apakah a < b? ";
-if ($hasilLebihKecil) {
-    echo "true";
-} else {
-    echo "false";
-}
-echo "<br>";
-
-echo "Apakah a > b? ";
-if ($hasilLebihBesar) {
-    echo "true";
-} else {
-    echo "false";
-}
-echo "<br>";
-
-echo "Apakah a <= b? ";
-if ($hasilLebihKecilSama) {
-    echo "true";
-} else {
-    echo "false";
-}
-echo "<br>";
-
-echo "Apakah a >= b? ";
-if ($hasilLebihBesarSama) {
-    echo "true";
-} else {
-    echo "false";
-}
-echo "<br><br>";
 
 $hasilAnd = ($a && $b);
 $hasilOr = ($a || $b);
 $hasilNotA = !$a;
 $hasilNotB = !$b;
 
-echo "Hasil AND (a && b): ";
-if ($hasilAnd) {
-    echo "true";
-} else {
-    echo "false";
-}
-echo "<br>";
+echo "Hasil AND (a && b): $hasilAnd <br>";
+echo "Hasil OR (a || b): $hasilOr <br>";
+echo "Hasil NOT (!a): $hasilNotA <br>";
+echo "Hasil NOT (!b): $hasilNotB <br><br>";
 
-echo "Hasil OR (a || b): ";
-if ($hasilOr) {
-    echo "true";
-} else {
-    echo "false";
-}
-echo "<br>";
-
-echo "Hasil NOT (!a): ";
-if ($hasilNotA) {
-    echo "true";
-} else {
-    echo "false";
-}
-echo "<br>";
-
-echo "Hasil NOT (!b): ";
-if ($hasilNotB) {
-    echo "true";
-} else {
-    echo "false";
-}
-echo "<br><br>";
 
 $a += $b;
-echo "Hasil a += b: $a <br>";
-
 $a -= $b;
-echo "Hasil a -= b: $a <br>";
-
 $a *= $b;
-echo "Hasil a *= b: $a <br>";
-
 $a /= $b;
-echo "Hasil a /= b: $a <br>";
-
 $a %= $b;
+
+echo "Hasil a += b: $a <br>";
+echo "Hasil a -= b: $a <br>";
+echo "Hasil a *= b: $a <br>";
+echo "Hasil a /= b: $a <br>";
 echo "Hasil a %= b: $a <br><br>";
 
 $hasilIdentik = ($a === $b);
 $hasilTidakIdentik = ($a !== $b);
 
-echo "Apakah a === b (identik)? ";
-if ($hasilIdentik) {
-    echo "true";
-} else {
-    echo "false";
-}
-echo "<br>";
-
-echo "Apakah a !== b (tidak identik)? ";
-if ($hasilTidakIdentik) {
-    echo "true";
-} else {
-    echo "false";
-}
-echo "<br>";
+echo "Apakah a === b (identik)? $hasilIdentik <br>";
+echo "Apakah a !== b (tidak identik)? $hasilTidakIdentik <br>";
 ?>

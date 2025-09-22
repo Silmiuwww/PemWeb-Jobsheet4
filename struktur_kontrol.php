@@ -50,4 +50,59 @@ for ($i = 1; $i <= $jumlahLahan; $i++) {
 
 echo "<br>";
 echo "Total jumlah buah yang akan dipanen adalah: $jumlahBuah buah";
+
+echo "<br><br>";
+
+$skorUjian = [85, 92, 78, 96, 88];
+$totalSkor = 0;
+
+echo "Daftar skor ujian:<br>";
+foreach ($skorUjian as $index => $skor) {
+    echo "Siswa " . ($index + 1) . ": $skor<br>";
+}
+
+echo "<br>";
+foreach ($skorUjian as $skor) {
+    $totalSkor += $skor;
+}
+
+$jumlahSiswa = count($skorUjian);
+$rataRata = $totalSkor / $jumlahSiswa;
+
+echo "Total skor: $totalSkor<br>";
+echo "Jumlah siswa: $jumlahSiswa<br>";
+echo "Rata-rata skor: $rataRata";
+
+echo "<br><br>";
+
+$nilaiSiswa = [85, 92, 58, 64, 90, 55, 88, 79, 70, 96];
+
+foreach ($nilaiSiswa as $nilai) {
+    if ($nilai < 60) {
+        echo "Nilai: $nilai (Tidak lulus) <br>";
+        continue;
+    }
+    echo "Nilai: $nilai (Lulus) <br>";
+}
+
+echo "<br>";
+
+$nilaiSiswa = [85, 92, 78, 64, 90, 75, 88, 79, 70, 96];
+$totalNilai = 0;
+$nilaiDipakai = 0;
+
+foreach ($nilaiSiswa as $nilai) {
+    if ($nilai >= 75 && $nilai <= 90) {
+        echo "Nilai: $nilai (Dipakai) <br>";
+        $totalNilai += $nilai;
+        $nilaiDipakai++;
+    } else {
+        echo "Nilai: $nilai (Diabaikan) <br>";
+    }
+}
+
+echo "Total nilai yang dipakai: $totalNilai<br>";
+echo "Jumlah nilai yang dipakai: $nilaiDipakai<br>";
+echo "Rata-rata: " . ($totalNilai / $nilaiDipakai);
+
 ?>
