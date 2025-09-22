@@ -105,4 +105,19 @@ echo "Total nilai yang dipakai: $totalNilai<br>";
 echo "Jumlah nilai yang dipakai: $nilaiDipakai<br>";
 echo "Rata-rata: " . ($totalNilai / $nilaiDipakai);
 
+echo "<br><br>";
+
+$hargaProduk = 120000;
+$diskon = 0;
+
+if ($hargaProduk > 100000) {
+    $diskon = 0.20 * $hargaProduk;
+}
+
+$hargaBayar = $hargaProduk - $diskon;
+
+echo "Perhitungan Diskon Pembelian <br>";
+echo "Harga produk: Rp $hargaProduk <br>";
+echo "Diskon: Rp $diskon <br>";
+echo "Harga yang harus dibayar: Rp $hargaBayar <br>";
 ?>
