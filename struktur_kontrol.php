@@ -120,4 +120,16 @@ echo "Perhitungan Diskon Pembelian <br>";
 echo "Harga produk: Rp $hargaProduk <br>";
 echo "Diskon: Rp $diskon <br>";
 echo "Harga yang harus dibayar: Rp $hargaBayar <br>";
+
+echo "<br>";
+
+$poin = 580;
+$hadiah = "TIDAK";
+
+if ($poin > 500) {
+    $hadiah = "YA";
+}
+
+echo "Total skor pemain adalah: $poin <br>";
+echo "Apakah pemain mendapatkan hadiah tambahan? $hadiah <br>";
 ?>

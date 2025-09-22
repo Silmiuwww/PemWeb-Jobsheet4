@@ -42,20 +42,20 @@ $hasilNotB = !$b;
 echo "Hasil AND (a && b): $hasilAnd <br>";
 echo "Hasil OR (a || b): $hasilOr <br>";
 echo "Hasil NOT (!a): $hasilNotA <br>";
-echo "Hasil NOT (!b): $hasilNotB <br><br>";
+echo "Hasil NOT (!b): $hasilNotB <br>";
 
+echo "<br>";
 
 $a += $b;
+echo "Setelah a += b, nilai a: $a <br>";
 $a -= $b;
-$a *= $b;
+echo "Setelah a -= b, nilai a: $a <br>";
+$a = $b;
+echo "Setelah a= b, nilai a: $a <br>";
 $a /= $b;
+echo "Setelah a /= b, nilai a: $a <br>";
 $a %= $b;
-
-echo "Hasil a += b: $a <br>";
-echo "Hasil a -= b: $a <br>";
-echo "Hasil a *= b: $a <br>";
-echo "Hasil a /= b: $a <br>";
-echo "Hasil a %= b: $a <br><br>";
+echo "Setelah a %= b, nilai a: $a <br><br>";
 
 $hasilIdentik = ($a === $b);
 $hasilTidakIdentik = ($a !== $b);
